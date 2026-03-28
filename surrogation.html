@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Angel Baby</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <!-- Translation Button in Header -->
+<div class="translate-container">
+  <button id="translate-btn">🌐 Translate</button>
+  <div id="google_translate_element" class="translate-dropdown"></div>
+</div>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en', // your default language
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+// Toggle dropdown
+document.getElementById('translate-btn').addEventListener('click', function() {
+  const dropdown = document.querySelector('.translate-dropdown');
+  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+});
+</script>
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+
+    <div class="logo">
+        <img  class="logo-img" src="/images/output-onlinegiftools.gif" alt="My Angel Baby Logo">
+        <h1 class="logo-name">Baby To Each Family</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="blog.html">Blog</a></li>
+        <li><a  href="about.html">About</a></li>
+        <li><a  href="contact.html">Contact</a></li>
+        <li class="dropdown">
+  <a href="#">Info ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="ivf.html">IVF</a></li>
+    <li><a href="surrogation.html">Surrogation</a></li>
+    <li><a href="donation.html">Donation</a></li>
+  </ul>
+</li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>What is Surrogation?</h2>
+    <p class="intro-text">Surrogation is a legal arrangement where a woman carries and gives birth to a child for another person or couple who cannot conceive or carry a pregnancy themselves.</p>
+    <p class="intro-text">Surrogacy can be a wonderful option for those facing infertility, but it also involves complex legal and emotional considerations.</p>
+</div>
+    <div class="cards">
+        <div class="card">
+            <h3>Newborn Sleep Tips</h3>
+            <p>How to improve your baby's sleep safely.</p>
+        </div>
+
+        <div class="card">
+            <h3>Feeding Guide</h3>
+            <p>Best nutrition practices for infants.</p>
+        </div>
+
+        <div class="card">
+            <h3>When to Call a Doctor</h3>
+            <p>Important signs parents should never ignore.</p>
+        </div>
+    </div>
+</div>
+
+<section class="additional-info">
+    <h2>Latest Blog Updates</h2>
+    <p>Stay informed with our regular posts on baby care, health, and parenting tips.</p>
+    <div class="info-block">
+        <h3>Weekly Tips</h3>
+        <p>Get weekly advice on newborn care and development.</p>
+    </div>
+    <div class="info-block">
+        <h3>Parent Stories</h3>
+        <p>Read real stories from parents navigating the joys of parenthood.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <p>Email: info@myangelbaby.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
+    <p>© 2026 My Angel Baby</p>
+</footer>
+
+</body>
+</html>
