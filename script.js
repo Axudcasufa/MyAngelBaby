@@ -35,3 +35,14 @@ document.querySelector(".prev").onclick = (e) => {
     index = (index - 1 + images.length) % images.length;
     img.src = images[index];
 };
+
+// show/hide extra buttons in hero section
+const showMoreBtn = document.getElementById('show-more-btn');
+const extraButtons = document.getElementById('extra-buttons');
+if (showMoreBtn && extraButtons) {
+  showMoreBtn.onclick = () => {
+    const isHidden = extraButtons.style.display === 'none' || extraButtons.style.display === '';
+    extraButtons.style.display = isHidden ? 'flex' : 'none';
+    showMoreBtn.textContent = isHidden ? 'Hide Options' : 'Show Options';
+  };
+}
