@@ -10,52 +10,35 @@
 <body>
 
 <nav class="navbar">
-    <!-- Translation Button in Header -->
-<div class="translate-container">
-  <button id="translate-btn">🌐 Translate</button>
-  <div id="google_translate_element" class="translate-dropdown"></div>
-</div>
-
-<!-- Google Translate Script -->
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en', // your default language
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-
-// Toggle dropdown
-document.getElementById('translate-btn').addEventListener('click', function() {
-  const dropdown = document.querySelector('.translate-dropdown');
-  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
-});
-</script>
-<script type="text/javascript" 
-  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
-
     <div class="logo">
-        <img  class="logo-img" src="/images/output-onlinegiftools.gif" alt="My Angel Baby Logo">
+        <img class="logo-img" src="/images/output-onlinegiftools.gif" alt="My Angel Baby Logo">
         <h1 class="logo-name">Baby To Each Family</h1>
     </div>
     <ul class="nav-links">
-        <li><a  href="index.html">Home</a></li>
-        <li><a  href="blog.html">Blog</a></li>
-        <li><a  href="about.html">About</a></li>
-        <li><a  href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li class="dropdown">
-  <a href="#">Info ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="ivf.html">IVF</a></li>
-    <li><a href="surrogation.html">Surrogation</a></li>
-    <li><a href="donation.html">Donation</a></li>
-  </ul>
-</li>
+            <a href="#">Info </a>
+            <ul class="dropdown-menu">
+                <li><a href="ivf.html">IVF</a></li>
+                <li><a href="surrogation.html">Surrogation</a></li>
+                <li><a href="donation.html">Donation</a></li>
+            </ul>
+        </li>
+        <li class="mobile-translate">
+            <div class="translate-container">
+                <button id="translate-btn">  Translate</button>
+                <div id="google_translate_element" class="translate-dropdown"></div>
+            </div>
+        </li>
     </ul>
-</nav>
-
-
+    <button class="hamburger" id="hamburger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
 <div class="container">
     <h2>What is IVF?</h2>
     <p class="intro-text">IVF (In Vitro Fertilization) is a process where an egg is fertilized outside the body, and the resulting embryo is then transferred to the uterus.</p>
@@ -136,9 +119,9 @@ document.getElementById('translate-btn').addEventListener('click', function() {
             <p class="email">myangelbaby777@yahoo.com</p>
             
             <div class="socials">
-                <a href="https://www.facebook.com/maia.butskhrikidze/"><img src="/images/facebook-brands-solid-full (2).svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/doctormaia8/"><img src="/images/instagram-brands-solid-full (2).svg" alt="Instagram"></a>
-                <a href="https://www.youtube.com/channel/UCNbUS30bwniwCwOxxLNjcOA"><img src="/images/youtube-brands-solid-full (2).svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/maia.butskhrikidze/" target="_blank"><img src="/images/facebook-brands-solid-full (2).svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/doctormaia8/" target="_blank"><img src="/images/instagram-brands-solid-full (2).svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCNbUS30bwniwCwOxxLNjcOA" target="_blank"><img src="/images/youtube-brands-solid-full (2).svg" alt="Twitter"></a>
             </div>
         </div>
 
@@ -166,7 +149,16 @@ document.getElementById('translate-btn').addEventListener('click', function() {
 </footer>
 
 <!-- WhatsApp Button -->
-<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">💬</a>
-
+<a href="https://wa.me/995514788899" class="whatsapp-button" target="_blank">
+    <img src="images/whatsapp-brands-solid-full.svg" alt="WhatsApp">
+</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
