@@ -248,6 +248,7 @@ body {
     font-family: Arial, sans-serif;
     background: #ffffff;
     color: #333;
+    padding-top: 100px;
 }
 
 /* LINKS */
@@ -263,9 +264,13 @@ a {
     align-items: center;
     justify-content: center;
     padding: 15px 40px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #005aff;  /* main purple */
     border-bottom: 5px solid #5fe0e6;
+    z-index: 1000;
 }
 
 /* Logo */
@@ -410,10 +415,10 @@ nav ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.50);
-    padding: 25px 35px;
+    padding: 20px 35px;
     border-radius: 10px;
     height:70px ;
-    width: 300px;
+    width: 200px;
     z-index: 2;
     
 }
@@ -425,7 +430,7 @@ nav ul li {
     color: white;
     border-radius: 6px;
     font-weight: 500;
-    margin-left: 75px;
+    margin-left: 25px;
 }
 
 .watch-group {
@@ -820,4 +825,28 @@ form textarea {
     .card {
         width: 90%;
     }
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #128c7e;
 }
