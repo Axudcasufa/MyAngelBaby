@@ -30,6 +30,12 @@ const patientHistoryImages = [
     "/images/gallery (6).jpg",
     "/images/gallery (7).jpg",
     "/images/gallery (8).jpg",
+    "/images/gallery (9).jpg",
+    "/images/gallery (10).jpg",
+    "/images/gallery (11).jpg",
+    "/images/gallery (12).jpg",
+    "/images/gallery (13).jpg",
+    "/images/gallery (14).jpg",
 ];
 
 let index = 0;

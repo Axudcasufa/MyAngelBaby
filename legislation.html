@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surrogation - My Angel Baby</title>
+    <title>Legislation - My Angel Baby</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
+     <div class="translate-container">
+        <button id="translate-btn">🌐 Translate</button>
+        <div id="google_translate_element" class="translate-dropdown"></div>
+    </div>
     <div class="logo">
         <img class="logo-img" src="/images/output-onlinegiftools.gif" alt="My Angel Baby Logo">
         <h1 class="logo-name">Baby To Each Family</h1>
@@ -27,57 +31,40 @@
                 <li><a href="donation.html">Donation</a></li>
             </ul>
         </li>
-        <li class="mobile-translate">
-            <div class="translate-container">
-                <button id="translate-btn">  Translate</button>
-                <div id="google_translate_element" class="translate-dropdown"></div>
-            </div>
-        </li>
     </ul>
-    <button class="hamburger" id="hamburger-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </button>
+    
+</nav>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+document.getElementById('translate-btn').addEventListener('click', function() {
+  const dropdown = document.querySelector('.translate-dropdown');
+  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+});
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <div class="container">
-    <h2>What is Surrogation?</h2>
-    <p class="intro-text">Surrogation is a legal arrangement where a woman carries and gives birth to a child for another person or couple who cannot conceive or carry a pregnancy themselves.</p>
-    <p class="intro-text">Surrogacy can be a wonderful option for those facing infertility, but it also involves complex legal and emotional considerations.</p>
-</div>
-    <div class="cards">
-        <a href="potential-parents.html">
-            <div class="card">
-                <h3>Information For Potential Parents</h3>
-                <p>Click for information</p>
-            </div>
-        </a>
-
-        <a href="surrogate-mother.html">
-            <div class="card">
-                <h3>Information For Surrogate mothers</h3>
-                <p>Click for information</p>
-            </div>
-        </a>
-
-        <a href="legislation.html">
-            <div class="card">
-                <h3>Legislation About Surrogation and Donation</h3>
-                <p>Click for information</p>
-            </div>
-        </a>
-    </div>
+    <h2>Legislation</h2>
+    <p>Learn about the laws, regulations, and rights that impact IVF, surrogacy, and family-building.</p>
+    <p>We provide clear summaries to help you understand the legal framework in your region.</p>
 </div>
 
 <section class="additional-info">
-    <h2>Latest Blog Updates</h2>
-    <p>Stay informed with our regular posts on baby care, health, and parenting tips.</p>
+    <h2>More from My Angel Baby</h2>
+    <p>Explore trusted guidance for families, medical topics, and support resources.</p>
     <div class="info-block">
-        <h3>Weekly Tips</h3>
-        <p>Get weekly advice on newborn care and development.</p>
+        <h3>Expert Advice</h3>
+        <p>Our articles are written for parents and caregivers seeking clear answers.</p>
     </div>
     <div class="info-block">
-        <h3>Parent Stories</h3>
-        <p>Read real stories from parents navigating the joys of parenthood.</p>
+        <h3>Community Support</h3>
+        <p>Find stories and resources from other families on the same journey.</p>
     </div>
 </section>
 
@@ -98,7 +85,8 @@
                 
             </p>
 
-            <img src="images/logo.png" class="feet-img">
+            <img src="images/output-onlinegiftools.gif" class="feet-img">
+
 
         </div>
 
@@ -155,13 +143,6 @@
 <a href="https://wa.me/995514788899" class="whatsapp-button" target="_blank">
     <img src="images/whatsapp-brands-solid-full.svg" alt="WhatsApp">
 </a>
+
 </body>
 </html>
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,14 @@
     <title>Medical Themes - My Angel Baby</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="script.js" defer></script>
-
 </head>
 <body>
-    
 
 <nav class="navbar">
+     <div class="translate-container">
+        <button id="translate-btn">🌐 Translate</button>
+        <div id="google_translate_element" class="translate-dropdown"></div>
+    </div>
     <div class="logo">
         <img class="logo-img" src="/images/output-onlinegiftools.gif" alt="My Angel Baby Logo">
         <h1 class="logo-name">Baby To Each Family</h1>
@@ -30,43 +31,40 @@
                 <li><a href="donation.html">Donation</a></li>
             </ul>
         </li>
-        <li class="mobile-translate">
-            <div class="translate-container">
-                <button id="translate-btn">  Translate</button>
-                <div id="google_translate_element" class="translate-dropdown"></div>
-            </div>
-        </li>
     </ul>
-    <button class="hamburger" id="hamburger-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </button>
+   
+</nav>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+document.getElementById('translate-btn').addEventListener('click', function() {
+  const dropdown = document.querySelector('.translate-dropdown');
+  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+});
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <div class="container">
     <h2>Medical Themes</h2>
-
-    <div class="album">
-        <div class="album-card">
-    <a href="#" class="nav prev">&#10094;</a>
-    
-    <img id="slider-image" src="/images/DSC01349.jpg" alt="">
-    
-    <a href="#" class="nav next">&#10095;</a>
-    </div>
+    <p>Explore core medical topics related to fertility, pregnancy, and newborn care.</p>
+    <p>Each section covers important health matters in a friendly, easy-to-understand format.</p>
 </div>
 
-
-
 <section class="additional-info">
-    <h2>Latest Blog Updates</h2>
-    <p>Stay informed with our regular posts on baby care, health, and parenting tips.</p>
+    <h2>More from My Angel Baby</h2>
+    <p>Explore trusted guidance for families, medical topics, and support resources.</p>
     <div class="info-block">
-        <h3>Weekly Tips</h3>
-        <p>Get weekly advice on newborn care and development.</p>
+        <h3>Expert Advice</h3>
+        <p>Our articles are written for parents and caregivers seeking clear answers.</p>
     </div>
     <div class="info-block">
-        <h3>Parent Stories</h3>
-        <p>Read real stories from parents navigating the joys of parenthood.</p>
+        <h3>Community Support</h3>
+        <p>Find stories and resources from other families on the same journey.</p>
     </div>
 </section>
 
@@ -87,7 +85,8 @@
                 
             </p>
 
-            <img src="images/logo.png" class="feet-img">
+            <img src="images/output-onlinegiftools.gif" class="feet-img">
+
 
         </div>
 
@@ -145,13 +144,6 @@
     <img src="images/whatsapp-brands-solid-full.svg" alt="WhatsApp">
 </a>
 
+
 </body>
 </html>
-
-
-
-
-
-
-
-
